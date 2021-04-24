@@ -5,6 +5,13 @@ npm install -g firebase-tools
 firebase login
 ```
 
+## Vercel
+
+```bash
+npx vercel link
+npx vercel env pull
+```
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
