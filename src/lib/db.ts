@@ -1,5 +1,5 @@
-import firebase from '@firebase/app';
-import '@firebase/database';
+import firebase from 'firebase/app/dist/index.cjs.js';
+import 'firebase/database/dist/index.cjs.js';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -12,8 +12,8 @@ var firebaseConfig = {
 	appId: import.meta.env.VITE_FB_APP_ID
 };
 // Initialize Firebase
-firebase.default.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-const db = firebase.default.database();
+const db = firebase.database();
 
 export default db;
