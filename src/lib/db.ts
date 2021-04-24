@@ -12,7 +12,7 @@ var firebaseConfig = {
 	appId: import.meta.env.VITE_FB_APP_ID
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.default.initializeApp(firebaseConfig);
 
 const db = firebase.database();
 
